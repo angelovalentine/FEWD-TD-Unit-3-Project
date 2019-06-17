@@ -1,10 +1,4 @@
 /* 
-Once you have everything in place for the mobile layout, use a media query to add a breakpoint to adjust the layout for wider tablet and desktop screens.
-Match the design as it should look on a tablet or desktop that is 768px wide using the desktop-form.png mockup.
-Use a mobile-first approach by writing your media queries using the min-width property in your CSS. 
-*/
-
-/* 
 Once all your breakpoints are in place, double check your layout matches both the mockups. 
 */
 
@@ -18,21 +12,140 @@ Once all your breakpoints are in place, double check your layout matches both th
 
 
 
-/* Attribute Selectors ---------- */
+/* Base Attribute Selectors ---------- */
+
+
+
+header {
+    width: 100%;
+    background: #000000;
+    color: white;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+}
+
+h1 {
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 1.5px rgba(234,33,45) solid;
+}
+
+.title {
+    text-align: center;
+    border-bottom: 4px #000 solid;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2.5px;
+    line-height: 1.5em;
+    padding: 0 20px;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.25em;
+    padding-bottom: 20px;
+}
+
+.form-container {
+    margin-top: 2px;
+    padding: 15px 0;
+    border-top: 2px #000 solid;
+}
+
+.body-container {
+    padding: 20px;
+    /* border-top: 2px #000 solid; */
+}
+
+fieldset {
+    border: none;
+    padding: 20px 0 0 0;
+    margin: 10px 0;
+}
 
 form[class="form-subscribe"] {
-    padding: 20px 24px;
-    background: #031e3d;
-    color: white;
+    font-family: "Montserrat", sans-serif;
+    /* padding: 20px 24px; */
+    /* margin: 40px 0; */
+    background: #fff;
+    color: #000;
 }
 
-div[id="container"] {
-    max-width: 500px;
+legend {
+    padding: 20px 0;
+}
+
+input[placeholder] {
+    background: #fff;
+    font-family: "Helvetica", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.select-css {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.25;
+    padding: 10px 5px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: 3px;
+    appearance: none;
+    background-color: #fff;
+}
+
+input,
+select {
+    margin: 10px 0 20px 0;
+    padding: 14px 0;
+    border-style: 2px #000 solid;
+    background: #bababa;
+    border: 1px #000 solid;
+    border-radius: 3px;
+}
+
+#zip_code {
+    width: 50%;
+}
+
+button {
+    display: flex;
     margin: auto;
+    width: 100%;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    padding: 8px 12px;
+    border: 5px #000 solid;
+    text-transform: uppercase;
+    border-style: none;
+    box-shadow: 0 0 0 rgba(0,0,0, 0);
+
 }
 
-input[type="text"] {
-    background: #fdfee6;
+footer {
+    background: #131a25;
+    color: #ffffff;
+    padding: 20px 40px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
 }
 
 input[type="menu"],
@@ -46,6 +159,10 @@ a[target="_blank"] {
     color: #39add1;
     text-decoration: none;
     border-bottom: 1px dotted;
+}
+
+input[radio] {
+    width: 0;
 }
 
 /* DRY Classes ---------- */
@@ -62,7 +179,14 @@ a[target="_blank"] {
     opacity: .75;
 }
 
+/* Media Queries ---------- */
+
 @media (min-width: 768px) {
+    header {
+        padding: 20px 40px;
+
+    }
+
     .inln {
         width: auto;
         display: inline-block;
@@ -78,3 +202,22 @@ a[target="_blank"] {
 form > a {
     font-size: .7em;
 }
+
+/* Pseudo Classes ---------- */
+
+input:focus,
+textarea:focus {
+  border-color: #0a914e;
+}
+
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+  }
+
+:root {
+    background: #ffffff;
+}
+
+/* input:not([type="submit"]) {
+    box-shadow: inset 0 2px 0 rgba(0,0,0, .15);
+  } */
