@@ -11,18 +11,7 @@
     Before you submit your project for review, make sure you can check off all of the items on the Student Project Submission Checklist. The checklist is designed to help you make sure you’ve met the grading requirements and that your project is complete and ready to be submitted!
     -->
 
-    <!-- 
-    NOTE: A good practice is to check your project for cross browser compatibility. Making sure that it looks and functions correctly in multiple (at least three) browsers is an important part of being a top-notch developer. If you want, leave a comment to the project reviewer about which browser(s) the project was checked to ensure they are seeing things as you have designed them.
-
-    Some browser options:
-
-    Google Chrome
-    Mozilla Firefox
-    Internet Explorer/Edge
-    Safari
-    -->
-
-    <!-- Use the required attribute to add HTML5 validation to make sure that required fields are filled out and input is formatted correctly. -->
+ 
 
 <!doctype html>
 <html lang="en">
@@ -32,170 +21,204 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Nunito+Sans|Montserrat|Helvetica' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito+Sans|Montserrat|Helvetica|Circular|PlayFair|SF+Pro+Display' rel='stylesheet' type='text/css'>
 </head>
 
 <body class="base">
 
-        <header>
-            <h1>The &nbsp Code &nbsp Review</h1>
-        </header>
+    <header>
+        <h1>The &nbsp Code &nbsp Review</h1>
+    </header>
 
-    <div class="body-container">
+        <div class="body-container">
 
-        <div class="title">
-            <h2>Sign up to our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox.</p>
-        </div>
+            <div class="title">
+                <h2>Sign up to our newsletter.</h2>
+                <p>Get the latest news on how your code is doing right in your inbox.</p>
+            </div>
 
-    <div class="form-container">
-        <form class="form-subscribe" action="index.html" method="post">
-        
-        <!-- Check that the label text position matches both mockups:
-            Mobile: Text should be above the form field.
-            Desktop: Text should be to the left side of the form field. -->
-        <!-- Add :focus states to the form for when a user clicks or tabs into a text field. -->
-            <fieldset class="fieldset">
-                <legend>Contact Information</legend><br>
-                <label for="name">Full Name</label><br>
-                <input id="name" type="text" name="user_name" placeholder="Required" required>
-            <br>
-                <label for="email">Email Address</label><br>
-                <input id="email" type="email" name="user_mail" placeholder="Required" required>
-            <br>
-                <label for="tel">Phone Number</label><br>
-                <input id="tel" type="tel" name="user_phone" placeholder="123-456-7890">
-            <br>
-                <label for="address">Street Address</label><br>
-                <input id="address" type="text" name="user_address" placeholder="you@sample.com">
-            <br>
-                <label for="city">City</label><br>
-                <input id="city" type="text" name="user_city">
-            <br>
-                <label for="state">State</label><br>
-                <select id="state" type="menu" name="user_state" placeholder="choose_state" class="select-class">
+            <div class="form-container">
 
-                    <option value="alabama">Alabama - AL</option>
-                    <option value="alaska">Alaska - AK</option>
-                        <option value="arizona">Arizona - AZ</option>
-                        <option value="arkansas">Arkansas - AR</option>
-                            <option value="california">California - CA</option>
-                            <option value="colorado">Colorado - CO</option>
-                                <option value="connecticut">Connecticut - CT</option>
-                                <option value="delaware">Delaware - DE</option>
-                                    <option value="florida">Florida - FL</option>
-                                    <option value="georgia"> Georgia - GA</option>
+                <form class="form-subscribe" action="index.html" method="post">
+                
+                <!-- Check that the label text position matches both mockups:
+                    Desktop: Text should be to the left side of the form field. -->
+
+                    <fieldset class="fieldset">
+
+                        <legend>Contact Information</legend><br>
+
+                            <div class="container">
+
+                                <label for="label name">Full Name</label><br>
+                                    <input id="name" type="text" name="user_name" placeholder="Required" required class="item field" autofocus>
+                                        <br>
+                                <label for="email" class="label">Email Address</label><br>
+                                    <input id="email" type="email" name="user_mail" placeholder="Required" required class="item field">
+                                        <br>
+                                <label for="tel" class="label">Phone Number</label><br>
+                                    <input id="tel" type="tel" name="user_phone" placeholder="123-456-7890" class="item field">
+                                        <br>
+                                <label for="address" class="label">Street Address</label><br>
+                                    <input id="address" type="text" name="user_address" class="item field">
+                                        <br>
+                                <label for="city" class="label">City</label><br>
+                                    <input id="city" type="text" name="user_city" class="item field">
+                                        <br>
+                                <label for="state" class="label">State</label><br>
+                                    <select id="state" type="menu" name="user_state" placeholder="choose_state" class="item label select-css">
+
+                                        <option value="alabama">Alabama - AL</option>
+                                        
+                                        <option value="alaska">Alaska - AK</option>
+                                        
+                                        <option value="arizona">Arizona - AZ</option>
+                                        
+                                        <option value="arkansas">Arkansas - AR</option>
+                                            
+                                        <option value="california">California - CA</option>
+                                                
+                                        <option value="colorado">Colorado - CO</option>
+                                                
+                                        <option value="connecticut">Connecticut - CT</option>
+                                                
+                                        <option value="delaware">Delaware - DE</option>
+                                                    
+                                        <option value="florida">Florida - FL</option>
+                                                    
+                                        <option value="georgia"> Georgia - GA</option>
+                                                    
                                         <option value="hawaii">Hawaii - HI</option>
+                                                        
                                         <option value="idaho">Idaho - ID</option>
-                                    <option value="illinois">Illinois - IL</option>
-                                    <option value="indiana">Indiana - IN</option>
-                                <option value="iowa">Iowa - IA</option>
-                                <option value="kansas">Kansas - KS</option>
-                            <option value="kentuck">Kentucky - KY</option>
-                            <option value="maine">Maine - ME</option>
-                        <option value="maryland">Maryland - MD</option>
-                        <option value="massachusetts">Massachusetts - MA</option>
-                    <option value="michigan">Michigan - MI</option>
-                    <option value="minnesota">Minnesota - MN</option>
-                        <option value="mississippi">Mississippi - MS</option>
-                        <option value="missouri">Missouri - MO</option>
-                            <option value="montana">Montana - MT</option>
-                            <option value="nebraska">Nebraska - NE</option>
-                                <option value="nevada">Nevada - NV</option>
-                                <option value="new-hampshire">New Hampshire - NH</option>
-                                    <option value="new-jersey">New Jersey - NJ</option>
-                                    <option value="new-mexico">New Mexico - NM</option>
+                                                    
+                                        <option value="illinois">Illinois - IL</option>
+                                                    
+                                        <option value="indiana">Indiana - IN</option>
+                                                    
+                                        <option value="iowa">Iowa - IA</option>
+                                                
+                                        <option value="kansas">Kansas - KS</option>
+                                            
+                                        <option value="kentuck">Kentucky - KY</option>
+                                            
+                                        <option value="maine">Maine - ME</option>
+                                        
+                                        <option value="maryland">Maryland - MD</option>
+                                    
+                                        <option value="massachusetts">Massachusetts - MA</option>
+                                    
+                                        <option value="michigan">Michigan - MI</option>
+                                    
+                                        <option value="minnesota">Minnesota - MN</option>
+                                        
+                                        <option value="mississippi">Mississippi - MS</option>
+                                            
+                                        <option value="missouri">Missouri - MO</option>
+                                            
+                                        <option value="montana">Montana - MT</option>
+                                            
+                                        <option value="nebraska">Nebraska - NE</option>
+                                                
+                                        <option value="nevada">Nevada - NV</option>
+                                                    
+                                        <option value="new-hampshire">New Hampshire - NH</option>
+                                                    
+                                        <option value="new-jersey">New Jersey - NJ</option>
+                                                    
+                                        <option value="new-mexico">New Mexico - NM</option>
+                                                            
                                         <option value="new-york">New York - NY</option>
+                                                        
                                         <option value="north-carolina">North Carolina - NC</option>
-                                    <option value="north-dakota">North Dakota - ND</option>
-                                    <option value="ohio">Ohio - OH</option>
-                                <option value="oklahoma">Oklahoma - OK</option>
-                                <option value="oregon">Oregon - OR</option>
-                            <option value="pennsylvania">Pennsylvania - PA</option>
-                            <option value="rhode-island">Rhode Island - RI</option>
-                        <option value="south-carolina">South Carolina - SC</option>
-                        <option value="south-dakota">South Dakota - SD</option>
-                    <option value="tennessee">Tennessee - TN</option>
-                    <option value="texas">Texas - TX</option>
-                        <option value="utah">Utah - UT</option>
-                        <option value="vermont">Vermont - VT</option>
-                            <option value="virginia">Virginia - VA</option>
-                            <option value="washington">Washington - WA</option>
-                                <option value="west-virginia">West Virginia - WV</option>
-                                <option value="wisconsin">Wisconsin - WI</option>
-                                    <option value="wyoming">Wyoming - WY</option>
-                </select>
-            <br>
-                <label for="zip_code">Zip Code</label><br>
-                <input id="zip_code" type="zip_code" name="user_zip">
-            <br>
-            </fieldset>
+                                                    
+                                        <option value="north-dakota">North Dakota - ND</option>
+                                                    
+                                        <option value="ohio">Ohio - OH</option>
+                                                    
+                                        <option value="oklahoma">Oklahoma - OK</option>
+                                                
+                                        <option value="oregon">Oregon - OR</option>
+                                        
+                                        <option value="pennsylvania">Pennsylvania - PA</option>
+                                                
+                                        <option value="rhode-island">Rhode Island - RI</option>
+                                        
+                                        <option value="south-carolina">South Carolina - SC</option>
+                                        
+                                        <option value="south-dakota">South Dakota - SD</option>
+                                        
+                                        <option value="tennessee">Tennessee - TN</option>
+                                        
+                                        <option value="texas">Texas - TX</option>
+                                        
+                                        <option value="utah">Utah - UT</option>
+                                        
+                                        <option value="vermont">Vermont - VT</option>
+                                        
+                                        <option value="virginia">Virginia - VA</option>
+                                        
+                                        <option value="washington">Washington - WA</option>
+                                        
+                                        <option value="west-virginia">West Virginia - WV</option>
+                                        
+                                        <option value="wisconsin">Wisconsin - WI</option>
+                                        
+                                        <option value="wyoming">Wyoming - WY</option>
+                                </select>
+                                        <br>
+                                <label for="zip_code" class="label">Zip Code</label><br>
+                                    <input id="zip_code" type="zip_code" name="user_zip" class="item field">
+                                        <br>
+                            </div>
+                    </fieldset>
 
-        <!-- this solid black border line -->
-        <div class="form-container">
-            <fieldset class="fieldset">
-                <legend>Newsletter</legend><br>
-                        <label>Select the newsletters you would like to receive</label>
-                    <br>
-                        <input id="html_news" type="checkbox" name="user_interests" value="html_interest">
-                        <label for="html_news">HTML News</label>
-                    <br>
-                        <input id="css_news" type="checkbox" name="user_interests" value="css_interest">
-                        <label for="css_news">CSS News</label>
-                    <br>
-                        <input id="javascript_news" type="checkbox" name="user_interests" value="javascript_interest">
-                        <label for="javascript_news">Javascript News</label>
-                    <br>
+                <div class="form-container">
 
-                <label>Newsletter Format</label>
-                    <br>
-                        <input id="html" type="radio" name="format" value="html">
-                        <label for="html">HTML</label>
-                    <br>
-                        <input id="plain_text" type="radio" name="format" value="plain_text">
-                        <label for="plain_text">Plain Text</label>
-                    <br>
-                        <label for="comment">Other topics you'd like to hear about</label><br>
-                        <textarea id="comment" name="user_comment"></textarea>
-                    <br>
-                        <label for="comment">Where did you hear about us?</label><br>
-                        <textarea id="comment" name="user_comment"></textarea>
-            </fieldset>
-                    <br>
-                        <button type="submit" value="Submit" class="btn">Sign Up</button>
+                    <fieldset class="fieldset">
+
+                        <legend>Newsletter</legend><br>
+
+                                <label class="newsletter-label">Select the newsletters you would like to receive</label>
+                                        <br>
+                                <input id="html_news" type="checkbox" name="user_interests" value="html_interest">
+                                <label for="html_news">HTML News</label>
+                                        <br>
+                                <input id="css_news" type="checkbox" name="user_interests" value="css_interest">
+                                <label for="css_news">CSS News</label>
+                                        <br>
+                                <input id="javascript_news" type="checkbox" name="user_interests" value="javascript_interest">
+                                <label for="javascript_news">Javascript News</label>
+                                        <br>
+
+                                <label class="newsletter-label">Newsletter Format</label>
+                                        <br>
+                                <input id="html" type="radio" name="format" value="html">
+                                <label for="html">HTML</label>
+                                        <br>
+                                <input id="plain_text" type="radio" name="format" value="plain_text">
+                                <label for="plain_text">Plain Text</label>
+                                        <br>
+                                <label for="comment" class="newsletter-label">Other topics you'd like to hear about</label><br>
+                                <textarea id="comment" name="user_comment" class="field"></textarea>
+                                        <br>
+                                <label for="comment" class="newsletter-label">Where did you hear about us?</label><br>
+                                <textarea id="comment" name="user_comment" class="field"></textarea>
+                                        <br>
+                    </fieldset>
+                
+                    <button type="submit" value="Submit" class="btn">Sign Up</button>
+
+                </div>
+
+                </form>
+
+            </div>
+
         </div>
-        </form>
-    </div>
-    </div>
-<footer>
-    Copyright The Code Review
-</footer>
+        
+    <footer>
+        Copyright The Code Review
+    </footer>
+
 </body>
-
-
-
- <!-- 
-
-Make sure you include the following form field types:
-
-    Form fields should include the following attributes:
-input: should include id, type and name attributes.
-select and textarea: should include id and name attributes.
-NOTE:
-
-
-Radio Buttons should have identical name attributes but unique value attributes
-
- 
-
- 
-
-   
-
-
-
-     
-
-      
-
-
