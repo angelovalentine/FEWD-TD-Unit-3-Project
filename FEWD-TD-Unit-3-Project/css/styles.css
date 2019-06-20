@@ -14,8 +14,8 @@ Once all your breakpoints are in place, double check your layout matches both th
 
 header {
     width: 100%;
-    background: #e9f0f2;
-    color: #303030;
+    background: #8d8d8d;
+    color: #c9c9c9;
     text-align: center;
     font-family: "Nunito Sans", sans-serif;
     text-transform: uppercase;
@@ -111,20 +111,21 @@ label {
     color: #303030;
 }
 
-.{
-    display: inline-block;
-    padding: 5px 10px;
+label,
+input {
+    display: block;
 }
 
-
+.checkbox,
+.radio {
+    display: inline-block;
+}
 
 /* note: fixes my problem to size all input fields using a class to exclude and include troublesome elements such as the radio and select elements respectively. */
 
 input,
 select {
-    margin: 10px 0 20px 0;
-    /* border-style: 2px #000 solid; */
-    /* background: #bababa; */
+    margin-bottom: 20px;
     border: 1px #c9c9c9 solid;
     border-radius: 3px;
 }
@@ -249,8 +250,8 @@ textarea:focus {
 
 
 footer {
-    background: #e9f0f2;
-    color: ##c9c9c9;
+    background: #303030;
+    color: #c9c9c9;
     padding: 20px 40px;
     text-align: center;
     font-family: "SF Pro Display", sans-serif;
