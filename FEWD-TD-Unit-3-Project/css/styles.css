@@ -1,20 +1,22 @@
-/* 
-Once all your breakpoints are in place, double check your layout matches both the mockups. 
-*/
-
-/* FOR EXCEEDS: Add at least the following additional styling enhancements to the form, feel free to add extra styling but leave the basic layout the same as the mockup:
-    - Uses CSS transitions for focus states.
-    - Use CSS transition effects for highlighting the look of the form fields.
-        For example, make a background color fade into view when the user clicks on a text field, and fade out when the user clicks or tabs out of the field. */
+* {
+    box-sizing: border-box;
+}
 
 
-:root {
-    background: #ffffff;
+body {
+    margin: 0 auto;
+    max-width: 768px;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 200;
+    color: #000;
+}
+
+input {
+    border: 1px solid white;
 }
 
 header {
     width: 100%;
-    background: #8d8d8d;
     color: #c9c9c9;
     text-align: center;
     font-family: "Nunito Sans", sans-serif;
@@ -29,20 +31,14 @@ h1 {
     border-bottom: 1.5px firebrick solid;
 }
 
-
-
-/* note: body-container is a wrap that adds padding around title card and form. this helps to illustrate the double line embellishment between the two parts of the body. */
-
 .body-container {
     padding: 20px;
-    background: #e9f0f2;
 }
 
-
-
 .title {
+    background: #f6b195;
     text-align: center;
-    border-bottom: 4px #c9c9c9 solid;
+    border: 4px #c9c9c9 solid;
     padding-left: 0;
     padding-right: 0;
 }
@@ -58,16 +54,12 @@ h2 {
 }
 
 p {
-    font-family: "PlayFair", serif;
+    font-family: "Circular", sans-serif;
     font-size: 14px;
     color: #303030;
     line-height: 1.25em;
     padding-bottom: 20px;
 }
-
-
-
-/* note: form-container adds the top margin to each fieldset */
 
 .form-container {
     margin-top: 2px;
@@ -75,22 +67,16 @@ p {
     border-top: 2px #c9c9c9 solid
 }
 
-
-
-form[class="form-subscribe"] {
+form[class="subscribe"] {
     font-family: "Montserrat", sans-serif;
     color: #000;
 }
 
-
-
 fieldset {
     border: none;
-    padding: 20px 0 0 0;
+    /* padding: 50px 50px; */
     margin: 10px 0;
 }
-
-
 
 legend {
     font-family: "Circular", sans-serif;
@@ -101,27 +87,49 @@ legend {
     color: #303030;
     width: 100%;
     text-align: center;
-    
+    margin: 20px;
 }
-
-
 
 label {
     font-family: "SF Pro Display", sans-serif;
     color: #303030;
 }
 
-label,
-input {
-    display: block;
+/* .contact-info {
+    padding: 50px 50px 35px 50px;
+} */
+
+.contact-info, .flex-pair-1 {
+    display: flex;
+    flex-direction: column;
 }
 
-.checkbox,
-.radio {
-    display: inline-block;
+.contact-info, .flex-pair-2 {
+    display: flex;
+    flex-direction: row;
 }
 
-/* note: fixes my problem to size all input fields using a class to exclude and include troublesome elements such as the radio and select elements respectively. */
+.contact-info label {
+    margin-bottom: 10px;
+}
+
+.contact-info input {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.select-css {
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 16px;
+    height: 50px;
+    /* width: 75%; */
+    max-width: 100%;
+    border-radius: 3px;
+    appearance: none;
+    background-color: #fff;
+}
 
 input,
 select {
@@ -133,7 +141,7 @@ select {
 input:focus,
 textarea:focus {
   border-color: #cbb784b9;
-  background: rgb(240, 240, 240);
+  background: rgb(250, 250, 250);
 }
 
 input[placeholder] {
@@ -144,33 +152,25 @@ input[placeholder] {
     padding-left: 10px;
 }
 
+#telephone {
+    max-width: 50%;
+}
+
 input[type="checkbox"]:checked + label {
     font-weight: bold;
   }
 
-#zip_code {
-    width: 50%;
-}
-
 #comment {
     margin: 10px 0 20px 0;
     padding: 10px 10px 30px;
+    border-radius: 3px;
+    border-color: lightgray;
+    font-family: "PlayFair", serif;
+    font-size: 14px;
 }
 
-/* note: this is a custom class i'm building for the select button using a reference guide from https://www.filamentgroup.com/lab/select-css.html */
-
-.select-css {
-    font-family: "SF Pro Display", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 12px 16px;
-    width: 100%;
-    max-width: 100%;
-    margin: 10px 0 20px;
-    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-    border-radius: 3px;
-    appearance: none;
-    background-color: #fff;
+#zip_code {
+    width: 50%;
 }
 
 .newsletter-label {
@@ -179,37 +179,40 @@ input[type="checkbox"]:checked + label {
     line-height: 1.25;
     margin: 20px 0 10px;
 }
-.field {
-    width: 100%;
-    max-width: 100%;
-    font-family: "PlayFair", sans-serif;
-    padding: 14px 0;
-    background: #fff;
-    border-radius: 3px;
-    border: 1px #c9c9c9 solid;
-    box-sizing: border-box;
+
+/* .newsletter {
+    padding: 50px;
+} */
+
+.newsletter-label {
+    margin-bottom: 15px:
 }
 
+#comment {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    margin-right: 20px;
+}
 
+input,
+select,
+button {
+    cursor: pointer;
+}
 
 button {
     font-family: "Circular", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.75px;
     background: #08598ca0;
-    color: #303030;
-    text-transform: uppercase;
-}
-
-a[target="_blank"] {
-    color: #39add1;
-    text-decoration: none;
-    border-bottom: 1px dotted;
+    color: #ffffff;
 }
 
 .btn {
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 1.75px;
     border-radius: 3px;
     padding: 14px 16px;
     margin: 10px 0 20px;
@@ -228,85 +231,59 @@ a[target="_blank"] {
 }
 
 
-
-input,
-select,
-button {
-    cursor: pointer;
-}
-
 input:focus {
-    outline: 3px lightblue solid;
-}
+    outline: none;
+    box-shadow: 0px 0px 4px rgb(196, 255, 102);
+  }
 
 label:focus {
-    outline: 3px lightblue solid;
+    outline: none;
+    box-shadow: 0px 0px 4px rgb(196, 255, 102);
 }
 
 textarea:focus {
-    outline: 3px lightblue solid;
+    outline: none;
+    box-shadow: 0px 0px 4px rgb(196, 255, 102);
 }
 
-
-
 footer {
-    background: #303030;
-    color: #c9c9c9;
+    background: #95609e;
+    color: #fff;
     padding: 20px 40px;
     text-align: center;
     font-family: "SF Pro Display", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 10px;
+    font-weight: 200;
 }
-
 
 
 @media (min-width: 768px) {
 
-    body {
-        max-width: 60%;
-        margin: auto;
-    }
-    
-        header {
-            background: #04293f;
-            color: #fff;
-        }
-
-
-    .container {
-        display: flex;
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-        /* justify-content: space-around; */
-    }
-    
-    legend {
-        text-align: left;
+    .contact-info,
+    .flex-pair-1 {
+        flex-direction: row;
     }
 
-    input[placeholder] {
-        text-align: right;
-        padding-right: 10px;
+    .contact-info label {
+        flex-basis: 25%;
+        height: 50px;
+        margin: auto 0;
     }
 
-    .item {
-        flex-grow: 2;
+    .contact-info input {
+        flex: 1;
+        flex-basis: 75%;
     }
 
-    .label {
-        flex-grow: 1;
+    .select-css {
+        width: 75%;
     }
 
-    /* .btn + .btn {
-        margin-left: 20px;
-    } */
+    #telephone {
+        max-width: 25%;
+    }
 
-
-    /* .inln {
-        width: auto;
-        display: inline-block;
-    } */
-
-
+    #zip_code {
+        max-width: 25%;
+    }
 }
