@@ -98,8 +98,9 @@ label {
 
 .contact-info, .flex-pair-1 {
     display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
+    flex-wrap: wrap;    
+    flex-direction: column;
+    flex-basis: 100%;
 }
 
 .contact-info, .flex-pair-2 {
@@ -184,7 +185,7 @@ font-weight: 500;
 }
 
 #zip_code {
-    max-width: 25%;
+    max-width: 30%;
 }
 
 .newsletter-label {
@@ -266,12 +267,14 @@ footer {
     .contact-info,
     .flex-pair-1 {
         flex-direction: row;
+        flex-basis: 100%;
     }
 
     .contact-info label {
-        flex-basis: 25%;
         height: 50px;
         margin: auto 0;
+        flex-basis: 25%;
+
     }
 
     .contact-info input {
@@ -290,6 +293,6 @@ footer {
     }
 
     #zip_code {
-        max-width: 25%;
+        max-width: 15%;
     }
 }
