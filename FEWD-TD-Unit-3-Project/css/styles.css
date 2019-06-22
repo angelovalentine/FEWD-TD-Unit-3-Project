@@ -8,7 +8,6 @@ body {
     max-width: 768px;
     font-family: "SF Pro Display", sans-serif;
     font-weight: 200;
-    color: #000;
 }
 
 input {
@@ -67,26 +66,24 @@ p {
     border-top: 2px #c9c9c9 solid
 }
 
-form[class="subscribe"] {
-    font-family: "Montserrat", sans-serif;
-    color: #000;
-}
-
 fieldset {
     border: none;
     /* padding: 50px 50px; */
     margin: 10px 0;
 }
 
+.field {
+    padding-left: 10px;
+}
 legend {
     font-family: "Circular", sans-serif;
     font-weight: 800;
-    letter-spacing: 1px;
-    padding: 20px 0 0;
+    letter-spacing: 1.25px;
     font-size: 20px;
     color: #303030;
     width: 100%;
     text-align: center;
+    padding: 20px 0 0;
     margin: 20px;
 }
 
@@ -101,7 +98,8 @@ label {
 
 .contact-info, .flex-pair-1 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
 }
 
 .contact-info, .flex-pair-2 {
@@ -136,20 +134,27 @@ select {
     margin-bottom: 20px;
     border: 1px #c9c9c9 solid;
     border-radius: 3px;
+    transition-duration: 500ms;
 }
 
 input:focus,
 textarea:focus {
-  border-color: #cbb784b9;
-  background: rgb(250, 250, 250);
+  background: #c9c9c9;
 }
 
 input[placeholder] {
     font-family: "SF Pro Display", sans-serif;
+    font-style: italic;
     font-size: 14px;
     font-weight: 300;
     text-align: justify;
-    padding-left: 10px;
+}
+
+
+
+input:hover,
+select:hover {
+    background: #55cc4693;
 }
 
 #telephone {
@@ -157,25 +162,37 @@ input[placeholder] {
 }
 
 input[type="checkbox"]:checked + label {
-    font-weight: bold;
+    font-weight: 500;
   }
+
+input[type="radio"]:checked + label {
+font-weight: 500;
+}
 
 #comment {
     margin: 10px 0 20px 0;
-    padding: 10px 10px 30px;
+    padding: 10px 10px 60px;
     border-radius: 3px;
     border-color: lightgray;
-    font-family: "PlayFair", serif;
+    font-family: "Amiri", serif;
+    font-style: italic;
     font-size: 14px;
+    letter-spacing: 1.15px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 #zip_code {
-    width: 50%;
+    max-width: 25%;
 }
 
 .newsletter-label {
     display: inline-block;
-    font-family: "PlayFair", serif;
+    font-family: "Amiri", serif;
+    letter-spacing: 1.25px;
+    font-style: italic;
+    font-size: 18px;
     line-height: 1.25;
     margin: 20px 0 10px;
 }
@@ -188,11 +205,6 @@ input[type="checkbox"]:checked + label {
     margin-bottom: 15px:
 }
 
-#comment {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-}
 [type="checkbox"], [type="radio"] {
     box-sizing: border-box;
     margin-right: 20px;
@@ -220,30 +232,21 @@ button {
 }
 
 .btn:hover {
-    opacity: .75;
-    background: #08598ce6;
+    opacity: .45;
+    transition-duration: 500ms;
+    background: #56cc46c0;
 }
 
 .btn:active {
-    box-shadow: inset 0px 1px 3px 2px
-    rgba(0, 0, 0, 0.4);
-    background: #06456ce6;
+    opacity: .9;
+    background: #56cc46;
 }
 
-
-input:focus {
+input:focus,
+label:focus,
+textarea:focus,
+button:focus {
     outline: none;
-    box-shadow: 0px 0px 4px rgb(196, 255, 102);
-  }
-
-label:focus {
-    outline: none;
-    box-shadow: 0px 0px 4px rgb(196, 255, 102);
-}
-
-textarea:focus {
-    outline: none;
-    box-shadow: 0px 0px 4px rgb(196, 255, 102);
 }
 
 footer {
@@ -253,6 +256,7 @@ footer {
     text-align: center;
     font-family: "SF Pro Display", sans-serif;
     font-size: 10px;
+    letter-spacing: 1.5px;
     font-weight: 200;
 }
 
@@ -271,6 +275,8 @@ footer {
     }
 
     .contact-info input {
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
         flex: 1;
         flex-basis: 75%;
     }
