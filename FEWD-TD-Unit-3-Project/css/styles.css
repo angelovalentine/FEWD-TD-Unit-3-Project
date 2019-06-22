@@ -68,7 +68,6 @@ p {
 
 fieldset {
     border: none;
-    /* padding: 50px 50px; */
     margin: 10px 0;
 }
 
@@ -91,10 +90,6 @@ label {
     font-family: "SF Pro Display", sans-serif;
     color: #303030;
 }
-
-/* .contact-info {
-    padding: 50px 50px 35px 50px;
-} */
 
 .contact-info, .flex-pair-1 {
     display: flex;
@@ -123,7 +118,6 @@ label {
     font-weight: 400;
     padding: 12px 16px;
     height: 50px;
-    /* width: 75%; */
     max-width: 100%;
     border-radius: 3px;
     appearance: none;
@@ -170,7 +164,8 @@ input[type="radio"]:checked + label {
 font-weight: 500;
 }
 
-#comment {
+#comment,
+#reference {
     margin: 10px 0 20px 0;
     padding: 10px 10px 60px;
     border-radius: 3px;
@@ -198,12 +193,8 @@ font-weight: 500;
     margin: 20px 0 10px;
 }
 
-/* .newsletter {
-    padding: 50px;
-} */
-
 .newsletter-label {
-    margin-bottom: 15px:
+    margin-bottom: 15px;
 }
 
 [type="checkbox"], [type="radio"] {

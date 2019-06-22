@@ -1,191 +1,169 @@
-    <!-- 
-    Make sure to check your code is valid by running it through an HTML and CSS validator.
-    Links to the validators can be found in the Project Resources. This will help you spot any errors that might be in your code.
-    There are a few exceptions that you don’t need to fix:
-    Don’t worry about any warnings, we just need you to check any errors that might be there.
-    If CSS validator flags use of calc, vendor prefixes or pseudo-elements/pseudo-classes these errors should be ignored.
-    If HTML validator flags use of pipe (‘|’) in Google font links/URLs this error can also be ignored.
-    -->
-
-    <!-- 
-    Before you submit your project for review, make sure you can check off all of the items on the Student Project Submission Checklist. The checklist is designed to help you make sure you’ve met the grading requirements and that your project is complete and ready to be submitted!
-    -->
-
- 
-
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>FEWD Project 3</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href='https://fonts.googleapis.com/css?family=Nunito+Sans|Montserrat|Helvetica|Circular|PlayFair|Amiri|SF+Pro+Display' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+    <head>
+    <meta charset="utf-8">
+    <title>FEWD Project 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito+Sans|Montserrat|Helvetica|Circular|PlayFair|Amiri|SF+Pro+Display' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <h1>The &nbsp Code &nbsp Review</h1>
-    </header>
+        <header>
+            <h1>The &nbsp; Code &nbsp; Review</h1>
+        </header>
 
-        <div class="body-container">
+            <div class="body-container">
 
-            <div class="title">
-                <h2>Sign up to our newsletter.</h2>
-                <p>Get the latest news on how your code is doing right in your inbox.</p>
-            </div>
-
-            <div class="form-container">
-
-                <form class="subscribe" action="index.html" method="post">
-                
-                <!-- Check that the label text position matches both mockups:
-                    Desktop: Text should be to the left side of the form field. -->
-
-                    <fieldset class="contact-info">
-                        <legend>Contact Information</legend>
-
-                            <!-- <div class="container-1"> -->
-                                
-                                <div class="flex-pair-1">
-                                    <label for="name">Full Name</label>
-                                        <input id="name" type="text" name="user_name" placeholder="Required" required class="field">
-                                </div>
-                                <div class="flex-pair-1">   
-                                    <label for="email">Email Address</label>
-                                        <input id="email" type="email" name="user_mail" placeholder="Required" required class="field">
-                                </div> 
-                                <div class="flex-pair-1">           
-                                    <label for="telephone" class="label">Phone Number</label>
-                                        <input id="tel" type="telephone" name="telephone" placeholder="123-456-7890" class="field">
-                                </div>   
-                                <div class="flex-pair-1">            
-                                    <label for="address" class="label">Street Address</label>
-                                        <input id="address" type="text" name="user_address" class="field">
-                                </div>
-                                <div class="flex-pair-1">            
-                                    <label for="city" class="label">City</label>
-                                        <input id="city" type="text" name="user_city" class="field">
-                                </div>            
-                                <div class="flex-pair-1">   
-                                    <label for="state" class="label">State</label>
-                                        <select id="state" type="menu" name="user_state" placeholder="choose_state" class="label select-css">
-
-                                            <option value="alabama">Alabama - AL</option>
-                                            
-                                            <option value="alaska">Alaska - AK</option>
-                                            
-                                            <option value="arizona">Arizona - AZ</option>
-                                            
-                                            <option value="arkansas">Arkansas - AR</option>
-                                                
-                                            <option value="california">California - CA</option>
-                                                    
-                                            <option value="colorado">Colorado - CO</option>
-                                                    
-                                            <option value="connecticut">Connecticut - CT</option>
-                                                    
-                                            <option value="delaware">Delaware - DE</option>
-                                                        
-                                            <option value="florida">Florida - FL</option>
-                                                        
-                                            <option value="georgia"> Georgia - GA</option>
-                                                        
-                                            <option value="hawaii">Hawaii - HI</option>
-                                                            
-                                            <option value="idaho">Idaho - ID</option>
-                                                        
-                                            <option value="illinois">Illinois - IL</option>
-                                                        
-                                            <option value="indiana">Indiana - IN</option>
-                                                        
-                                            <option value="iowa">Iowa - IA</option>
-                                                    
-                                            <option value="kansas">Kansas - KS</option>
-                                                
-                                            <option value="kentuck">Kentucky - KY</option>
-                                                
-                                            <option value="maine">Maine - ME</option>
-                                            
-                                            <option value="maryland">Maryland - MD</option>
-                                        
-                                            <option value="massachusetts">Massachusetts - MA</option>
-                                        
-                                            <option value="michigan">Michigan - MI</option>
-                                        
-                                            <option value="minnesota">Minnesota - MN</option>
-                                            
-                                            <option value="mississippi">Mississippi - MS</option>
-                                                
-                                            <option value="missouri">Missouri - MO</option>
-                                                
-                                            <option value="montana">Montana - MT</option>
-                                                
-                                            <option value="nebraska">Nebraska - NE</option>
-                                                    
-                                            <option value="nevada">Nevada - NV</option>
-                                                        
-                                            <option value="new-hampshire">New Hampshire - NH</option>
-                                                        
-                                            <option value="new-jersey">New Jersey - NJ</option>
-                                                        
-                                            <option value="new-mexico">New Mexico - NM</option>
-                                                                
-                                            <option value="new-york">New York - NY</option>
-                                                            
-                                            <option value="north-carolina">North Carolina - NC</option>
-                                                        
-                                            <option value="north-dakota">North Dakota - ND</option>
-                                                        
-                                            <option value="ohio">Ohio - OH</option>
-                                                        
-                                            <option value="oklahoma">Oklahoma - OK</option>
-                                                    
-                                            <option value="oregon">Oregon - OR</option>
-                                            
-                                            <option value="pennsylvania">Pennsylvania - PA</option>
-                                                    
-                                            <option value="rhode-island">Rhode Island - RI</option>
-                                            
-                                            <option value="south-carolina">South Carolina - SC</option>
-                                            
-                                            <option value="south-dakota">South Dakota - SD</option>
-                                            
-                                            <option value="tennessee">Tennessee - TN</option>
-                                            
-                                            <option value="texas">Texas - TX</option>
-                                            
-                                            <option value="utah">Utah - UT</option>
-                                            
-                                            <option value="vermont">Vermont - VT</option>
-                                            
-                                            <option value="virginia">Virginia - VA</option>
-                                            
-                                            <option value="washington">Washington - WA</option>
-                                            
-                                            <option value="west-virginia">West Virginia - WV</option>
-                                            
-                                            <option value="wisconsin">Wisconsin - WI</option>
-                                            
-                                            <option value="wyoming">Wyoming - WY</option>
-                                    </select>
-                                </div>
-                                <div class="flex-pair-1">         
-                                    <label for="zip_code" class="label">Zip Code</label>
-                                        <input id="zip_code" type="zip_code" name="user_zip" class="field">
-                                </div>        
-                            </div>
-                    </fieldset>
+                <div class="title">
+                    <h2>Sign up to our newsletter.</h2>
+                    <p>Get the latest news on how your code is doing right in your inbox.</p>
+                </div>
 
                 <div class="form-container">
+
+                    <form class="subscribe" action="index.html" method="post">
+
+                        <fieldset class="contact-info">
+                            <legend>Contact Information</legend>
+                                    
+                                    <div class="flex-pair-1">
+                                        <label for="name">Full Name</label>
+                                            <input id="name" type="text" name="user_name" placeholder="Required" required class="field">
+                                    </div>
+                                    <div class="flex-pair-1">   
+                                        <label for="email">Email Address</label>
+                                            <input id="email" type="email" name="user_mail" placeholder="Required" required class="field">
+                                    </div> 
+                                    <div class="flex-pair-1">           
+                                        <label for="tel" class="label">Phone Number</label>
+                                            <input id="tel" type="tel" name="telephone" placeholder="123-456-7890" class="field">
+                                    </div>   
+                                    <div class="flex-pair-1">            
+                                        <label for="address" class="label">Street Address</label>
+                                            <input id="address" type="text" name="user_address" class="field">
+                                    </div>
+                                    <div class="flex-pair-1">            
+                                        <label for="city" class="label">City</label>
+                                            <input id="city" type="text" name="user_city" class="field">
+                                    </div>            
+                                    <div class="flex-pair-1">   
+                                        <label for="state" class="label">State</label>
+                                            <select id="state" name="user_state" class="label select-css">
+
+                                                <option value="alabama">Alabama - AL</option>
+                                                
+                                                <option value="alaska">Alaska - AK</option>
+                                                
+                                                <option value="arizona">Arizona - AZ</option>
+                                                
+                                                <option value="arkansas">Arkansas - AR</option>
+                                                    
+                                                <option value="california">California - CA</option>
+                                                        
+                                                <option value="colorado">Colorado - CO</option>
+                                                        
+                                                <option value="connecticut">Connecticut - CT</option>
+                                                        
+                                                <option value="delaware">Delaware - DE</option>
+                                                            
+                                                <option value="florida">Florida - FL</option>
+                                                            
+                                                <option value="georgia"> Georgia - GA</option>
+                                                            
+                                                <option value="hawaii">Hawaii - HI</option>
+                                                                
+                                                <option value="idaho">Idaho - ID</option>
+                                                            
+                                                <option value="illinois">Illinois - IL</option>
+                                                            
+                                                <option value="indiana">Indiana - IN</option>
+                                                            
+                                                <option value="iowa">Iowa - IA</option>
+                                                        
+                                                <option value="kansas">Kansas - KS</option>
+                                                    
+                                                <option value="kentuck">Kentucky - KY</option>
+                                                    
+                                                <option value="maine">Maine - ME</option>
+                                                
+                                                <option value="maryland">Maryland - MD</option>
+                                            
+                                                <option value="massachusetts">Massachusetts - MA</option>
+                                            
+                                                <option value="michigan">Michigan - MI</option>
+                                            
+                                                <option value="minnesota">Minnesota - MN</option>
+                                                
+                                                <option value="mississippi">Mississippi - MS</option>
+                                                    
+                                                <option value="missouri">Missouri - MO</option>
+                                                    
+                                                <option value="montana">Montana - MT</option>
+                                                    
+                                                <option value="nebraska">Nebraska - NE</option>
+                                                        
+                                                <option value="nevada">Nevada - NV</option>
+                                                            
+                                                <option value="new-hampshire">New Hampshire - NH</option>
+                                                            
+                                                <option value="new-jersey">New Jersey - NJ</option>
+                                                            
+                                                <option value="new-mexico">New Mexico - NM</option>
+                                                                    
+                                                <option value="new-york">New York - NY</option>
+                                                                
+                                                <option value="north-carolina">North Carolina - NC</option>
+                                                            
+                                                <option value="north-dakota">North Dakota - ND</option>
+                                                            
+                                                <option value="ohio">Ohio - OH</option>
+                                                            
+                                                <option value="oklahoma">Oklahoma - OK</option>
+                                                        
+                                                <option value="oregon">Oregon - OR</option>
+                                                
+                                                <option value="pennsylvania">Pennsylvania - PA</option>
+                                                        
+                                                <option value="rhode-island">Rhode Island - RI</option>
+                                                
+                                                <option value="south-carolina">South Carolina - SC</option>
+                                                
+                                                <option value="south-dakota">South Dakota - SD</option>
+                                                
+                                                <option value="tennessee">Tennessee - TN</option>
+                                                
+                                                <option value="texas">Texas - TX</option>
+                                                
+                                                <option value="utah">Utah - UT</option>
+                                                
+                                                <option value="vermont">Vermont - VT</option>
+                                                
+                                                <option value="virginia">Virginia - VA</option>
+                                                
+                                                <option value="washington">Washington - WA</option>
+                                                
+                                                <option value="west-virginia">West Virginia - WV</option>
+                                                
+                                                <option value="wisconsin">Wisconsin - WI</option>
+                                                
+                                                <option value="wyoming">Wyoming - WY</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-pair-1">         
+                                        <label for="zip_code" class="label">Zip Code</label>
+                                            <input id="zip_code" type="text" name="user_zip" class="field">
+                                    </div>        
+                        </fieldset>
+                <!-- </div> -->
+
+                <!-- <div class="form-container"> -->
 
                     <fieldset class="newsletter">
 
                         <legend>Newsletter</legend><br>
-                            
-                            <div class="container-2">
 
                                 <label class="newsletter-label">Select the newsletters you would like to receive:</label>
                                     
@@ -219,30 +197,24 @@
 
         
                                 <label for="comment" class="newsletter-label">Other topics you'd like to hear about:</label>
-                                
                                     <textarea id="comment" name="user_comment" class="field"></textarea>
                                 
-                                <label for="comment" class="newsletter-label">Where did you hear about us?</label>
-                                
-                                    <textarea id="comment" name="user_comment" class="field"></textarea>
-                                
-
-                            </div>   
+                                <label for="reference" class="newsletter-label">Where did you hear about us?</label>
+                                    <textarea id="reference" name="user_reference" class="field"></textarea>  
 
                     </fieldset>
-                
+                    
                     <button type="submit" value="Submit" class="btn">Sign Up</button>
 
-                </div>
+                    </form>
 
-                </form>
+                </div> <!-- form container -->
 
-            </div>
+            </div> <!-- body container -->
+            
+        <footer>
+            Copyright The Code Review
+        </footer>
 
-        </div>
-        
-    <footer>
-        Copyright The Code Review
-    </footer>
-
-</body>
+    </body>
+</html>
